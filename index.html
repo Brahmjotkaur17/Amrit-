@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<script src="https://kit.fontawesome.com/a14ae32021.js" crossorigin="anonymous"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>This one is for you amrit</title>
+
+<style type="text/css">
+@font-face {
+	font-family: digit;
+	src: url('digital-7_mono.ttf') format("truetype");
+}
+</style>
+<link href="css/default.css" type="text/css" rel="stylesheet">
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/garden.js"></script>
+<script type="text/javascript" src="js/functions.js"></script>
+
+</head>
+
+<body>
+
+<div id="mainDiv">
+	<div id="content">
+		<div id="code">
+			<span class="comments">/**</span><br />
+			<span class="space"/><span class="comments">*Hey amrit</span><br />
+			<span class="space"/><span class="comments">*/</span><br />
+			Hope you are doing well!<br />
+			I have no idea why you ghosted me especially when I am ill  <br />
+			<span class="comments">// Never thought you would do that </span><br />
+			I took a friends couch when vomitted 5 time cuz of food poisoning? Is that the reason;<br />
+			<span class="comments">// Seems a bit unfair if that's the reason</span><br />
+			Or was it bcoz I had two servings of alcohol? <br />
+			Have been on bed for two days now, tumne haal bhi nhi pucha;<br />
+			Keh rhe na kal your responsibility was to make sure if i reached safely;<br />
+			Uske baad ghar aakar main chahe food poisoning se marun yaa fever flu se, uski koi responsibility nhi;<br />
+			It's not your mistake, tum ladke aise hi hote ho, bas tumhe aur ladkon se protect krna zaroori lagta hai;<br />
+			I dont what you think maine kya kra hai uss raat kiske saath, abb farak bhi nhi padta<br />
+			Dont want to prove myself jab tumhe trust hi nhi hai<br />
+			You left me alone when I need you bcoz of something I did that even I dont know <br/>
+			<span class="comments">// I know you enough to know ke you always want to believe what's cooked in your head, so wouldnt even justify myself</span><br />
+			I will love you forever whether whatever cooked story in your head you choose to believe <br />
+			but just dont ever use words like love for me now on<br />
+			<br />
+			<br>
+			<br>
+			All I want to say is:<br />
+			I will pray you interview goes well tomorrow and you get success in the world;<br />
+			But I dont expect I will forget how you make me question my character everytime;<br />
+			<br>
+			<br>
+			How about a good hug, just click the heart below<br />
+			<br>
+			<span id="heartspan">
+			<a ><i class="fas fa-heart" id="icon"></i></a>
+			</span>
+			<br>
+			Dont worry, the link isnt broken <br/>
+			The hug is no more there :) <br/>
+		</div>
+		<div id="loveHeart">
+			<canvas id="garden"></canvas>
+			<div id="words">
+				<div id="messages">
+					STUPIDS FOREVER 
+					<div id="elapseClock"></div>
+				</div>
+				<div id="loveu">
+					I LOVE YOU SO MUCH<br/>
+					<div class="signature">- AMRIT</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+//var offsetX = $("#loveHeart").width() / 2;
+//var offsetY = $("#loveHeart").height() / 2 - 55;
+var together = new Date();
+together.setFullYear(2019, 10, 12);
+together.setHours(16);
+together.setMinutes(30);
+together.setSeconds(0);
+together.setMilliseconds(0); 
+
+if (!document.createElement('canvas').getContext) {
+	var msg = document.createElement("div");
+	msg.id = "errorMsg";
+	msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+"; 
+	document.body.appendChild(msg);
+	$("#code").css("display", "none")
+	$("#copyright").css("position", "absolute");
+	$("#copyright").css("bottom", "10px");
+	document.execCommand("stop");
+} else {
+	setTimeout(function () {
+		startHeartAnimation();
+	}, 5000);
+
+	timeElapse(together);
+	setInterval(function () {
+		timeElapse(together);
+	}, 500);
+
+	adjustCodePosition();
+	$("#code").typewriter();
+}
+</script>
+</body>
+</html>
